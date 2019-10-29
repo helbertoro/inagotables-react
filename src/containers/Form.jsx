@@ -39,12 +39,12 @@ class Form extends React.Component{
                             <p className="fs-25"><b>¡Tienes el espíritu de un Inagotable!</b> Por favor completa tu inscripción a continuación</p>
                         </div>
                         <div className="col-12 col-md-8">
-                            <form className="inscription" onSubmit={this.handleSubmit}>
+                            <form className="inscription" action="https://idcbis.org.co/msj/send.php" method="post">
                                 <div className="col-12 px-0 inscription__container">
                                     <input className="inscription__container--input" type="text" name="nombre" placeholder="Tu nombre*" />
                                 </div>
                                 <div className="col-12 px-0 inscription__container">
-                                    <input className="inscription__container--input" type="email" name="correo" placeholder="Tu correo electrónico*" />
+                                    <input className="inscription__container--input" type="email" name="email" placeholder="Tu correo electrónico*" />
                                 </div>
                                 <div className="col-12 px-0 inscription__container">
                                     
@@ -69,6 +69,7 @@ class Form extends React.Component{
                                     </label>
                                 </div>
                                 <div className="col-12 text-center">
+                                    <input type="hidden" name="asunto" value="Lead inagotable" />
                                     <button className="btn btn-light" type="submit">
                                         Inscribirme
                                         <i className="fas fa-caret-right"></i>
