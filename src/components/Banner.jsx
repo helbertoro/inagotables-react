@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../assets/styles/components/Banner.sass';
 import fotoBanner from '../assets/static/banner-v2.jpg';
 import logoInagotables from '../assets/static/inagotables.png';
@@ -14,7 +15,10 @@ const Banner = () => (
                         <p className="bannerMsj__text">Una oportunidad para los donantes de sangre</p>
                         <div className="bannerMsj__title">
                             <p className="bannerMsj__title--one">DE IMPACTO</p>
-                            <a className="bannerMsj__title--button btn-light" href="#" data-toggle="modal" data-target="#datos">¡Me interesa! <i className="fas fa-caret-down"></i></a>
+                            <Link className="bannerMsj__title--button btn-red-light" to="/registrarme">
+                                ¡Me interesa! 
+                                <i className="fas fa-caret-down"></i>
+                            </Link>
                         </div>
                     </div>
                 </div>

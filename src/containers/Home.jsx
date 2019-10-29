@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
@@ -36,13 +37,18 @@ const Home = () => (
                 <div className="col-12 col-lg-7 text-center py-4">
                     <h3>Inscríbete en nuestra red</h3>
                     <p>Recibirás información muy importante y  agendaremos una cita para que tu donación sea en la época en que generará un mayor impacto.</p>
-                    <a className="btn-red" href="#" data-toggle="modal" data-target="#datos">Quiero inscribirme <i className="fas fa-caret-right"></i></a>
+                    <Link className="btn-red" to="/registrarme">
+                        Quiero inscribirme
+                        <i className="fas fa-caret-right"></i>
+                    </Link>
                 </div>
             </section>
             <section className="py-3">
                 <div className="row justify-content-center">
                     <div className="col-12 text-center py-4">
-                        <a className="btn-light" href="#" data-toggle="modal" data-target="#datos">Requisitos</a>
+                        <Link className="btn-red-light" to="/registrarme">
+                            Requisitos
+                        </Link>
                     </div>
                     <div className="col-12 col-lg-8 align-self-center text-center">
                         <p>Además de cumplir con los requisitos básicos de donación de sangre, que encontrarás en este enlace, es muy importante que cumplas las siguientes condiciones:</p>
@@ -77,7 +83,10 @@ const Home = () => (
                         <p>La misión de los Inagotables es programar su donación para que esta sea en el momento de mayor impacto. Gracias a tu compromiso cumpliremos el reto de llevar nuevos componentes sanguíneos a los pacientes que más lo necesitan en hospitales públicos del Distrito.</p>
                     </div>
                     <div className="col-12 py-4 text-center">
-                        <a className="btn-red" href="#" data-toggle="modal" data-target="#datos">¿Cumplirías el reto? <i className="fas fa-caret-down"></i></a>
+                        <Link className="btn-red" to="/registrarme">
+                            ¿Cumplirías el reto?
+                            <i className="fas fa-caret-down"></i>
+                        </Link>
                     </div>
                 </div>
             </section>
