@@ -8,6 +8,9 @@ const Form = () => (
         <div className="container">
             <Header />
             <div className="row justify-content-center my-5">
+                <div className="col-12 col-md-8 text-center">
+                    <p className="fs-25"><b>¡Tienes el espíritu de un Inagotable!</b> Por favor completa tu inscripción a continuación</p>
+                </div>
                 <div className="col-12 col-md-8">
                     <form className="inscription" action="">
                         <div className="col-12 px-0 inscription__container">

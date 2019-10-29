@@ -1,4 +1,5 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -33,10 +34,12 @@ class Register extends React.Component {
         else {
             this.setState({vacio: false});
             if (this.state.p1 == "0" || this.state.p2 == "0" || this.state.p3 == "0" || this.state.p4 == "0") {
-                console.log('no eres un Inagotable');
+                console.log('no eres');
+                this.props.history.push(`/no-eres`);
             }
             else {
-                console.log('Si eres un Inagotable');
+                console.log('si eres');
+                this.props.history.push(`/formulario`);
             }
         }
         
