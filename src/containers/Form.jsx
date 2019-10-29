@@ -25,8 +25,9 @@ class Form extends React.Component{
         });
     }
     handleSubmit (e) {
-        e.preventDefault();
-        
+       e.preventDefault();
+        console.log('Entro');
+        this.props.history.push(`/gracias`);
     }
     render() {
         return (
@@ -38,7 +39,7 @@ class Form extends React.Component{
                             <p className="fs-25"><b>¡Tienes el espíritu de un Inagotable!</b> Por favor completa tu inscripción a continuación</p>
                         </div>
                         <div className="col-12 col-md-8">
-                            <form className="inscription" action="">
+                            <form className="inscription" onSubmit={this.handleSubmit}>
                                 <div className="col-12 px-0 inscription__container">
                                     <input className="inscription__container--input" type="text" name="nombre" placeholder="Tu nombre*" />
                                 </div>
