@@ -4,6 +4,7 @@ import Home from '../containers/Home';
 import Register from '../containers/Register';
 import noInagotable from '../containers/noInagotable';
 import Thanks from '../containers/Thanks';
+import Requirement from '../containers/Requirement';
 import Form from '../containers/Form';
 
 
@@ -14,6 +15,7 @@ const App = () => (
         <Route exact path="/no-eres" component={noInagotable} />
         <Route exact path="/formulario" component={Form} />
         <Route exact path="/gracias" component={Thanks} />
+        <Route exact path="/requerimientos" component={Requirement} />
     </BrowserRouter>
 );
 
