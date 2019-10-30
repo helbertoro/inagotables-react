@@ -40,8 +40,36 @@ class Form extends React.Component{
                         </div>
                         <div className="col-12 col-md-8">
                             <form className="inscription" action="https://idcbis.org.co/msj/send.php" method="post">
+                                
+                                <div className="row inscription__container no-gutters">
+                                    <label className="col-12 no-gutters" htmlFor="genero">Identificación</label>
+                                    <select className="col-4 inscription__container--select" name="tipoIdentificacion" id="tipoIdentificacion">
+                                        <option value="CC">CC</option>
+                                        <option value="NUIP">NUIP</option>
+                                        <option value="PA">PA</option>
+                                        <option value="CE">CE</option>
+                                    </select>
+
+                                    <input className="col-8 inscription__container--input" type="text" name="identificacion" placeholder="Tu documento de identificación*" />
+                                </div>    
+                                    
                                 <div className="col-12 px-0 inscription__container">
                                     <input className="inscription__container--input" type="text" name="nombre" placeholder="Tu nombre*" />
+                                </div>
+
+                                <div className="col-12 px-0 inscription__container">
+                                    
+                                    <label htmlFor="genero">Género</label>
+                                    <select className="inscription__container--select" name="genero" id="genero">
+                                        <option value="Femenino">Femenino</option>
+                                        <option value="Masculino">Masculino</option>
+                                        <option value="Otro">Otro</option>
+                                    </select>
+                                    
+                                </div>
+                                <div className="col-12 px-0 inscription__container">
+                                    <input className="inscription__container--input" type="text" name="celular" placeholder="Tu número celular*" />
+                                    <i className="msj-idcbis">Nos comprometemos a pensar en ti antes de enviar cada correo.</i>
                                 </div>
                                 <div className="col-12 px-0 inscription__container">
                                     <input className="inscription__container--input" type="email" name="email" placeholder="Tu correo electrónico*" />
