@@ -11,7 +11,7 @@ const Requirement = () => (
                 <div className="col-12 col-md-12 mb-3 text-center">
                     <h2>Requisitos</h2>
                 </div>
-                <div className="col-12 col-md-6">
+                <div className="col-12 col-md-8">
                     <ul>
                         <li> Pesar 50 kilos o más </li>
                         <li> Buen estado de salud </li>
@@ -27,11 +27,6 @@ const Requirement = () => (
                         <li> No​ ​estar​ ​embarazada </li>
                         <li> Si​ ​está​ ​lactando,​ ​que​ ​su​ ​hijo​ ​o​ ​hija​ ​tenga​ ​más​ ​de​ ​1​ ​año </li>
                     </ul>
-                </div>
-                <div className="col-12 col-md-6">
-                    <div className="embed-responsive embed-responsive-16by9">
-                        <iframe className="embed-responsive-item" src="https://www.youtube.com/watch?v=kq4zZi7FCe4"></iframe>
-                    </div>
                 </div>
                 <div className="col-12 col-md-8 mt-3 text-center">
                     <Link to="/" className="btn-red-light">
