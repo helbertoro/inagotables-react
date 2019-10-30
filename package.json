@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "LandingPage Inagotables campaña para el Banco Distrital de Sangre - IDCBIS",
   "main": "index.js",
+  "homepage": "https://idcbis.org.co/inagotables",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",

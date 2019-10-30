@@ -8,7 +8,7 @@ import Form from '../containers/Form';
 
 
 const App = () => (
-    <BrowserRouter>
+    <BrowserRouter basename="/inagotables">
         <Route exact path="/" component={Home} />
         <Route exact path="/registrarme" component={Register} />
         <Route exact path="/no-eres" component={noInagotable} />
