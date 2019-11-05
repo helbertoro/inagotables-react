@@ -101,14 +101,14 @@ class Register extends React.Component {
                                 <div className="form-check">
                                     <input className="form-check-input" type="radio" name="p3" id="p3r1" value="1" onChange={this.handleInputChange} />
                                     <label className="form-check-label" htmlFor="p3r1">
-                                        No la acepto
+                                        No la acepto, porque no me interesa a quién llegue
                                     </label>
                                 </div>
 
                                 <div className="form-check">
                                     <input className="form-check-input" type="radio" name="p3" id="p3r2" value="0" onChange={this.handleInputChange} />
                                     <label className="form-check-label" htmlFor="p3r2">
-                                        La acepto
+                                        La acepto, porque me gustaría saber quién la recibe
                                     </label>
                                 </div>
 
